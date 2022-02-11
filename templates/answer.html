@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1><u>{% block title %} Solution {% endblock %}</u></h1>
+     <p></p>
+     <p></p>
+       <div>
+           <form action="/question" method = "POST">
+               <p></p>
+             <h3>{% autoescape false %}
+                {{ question }}
+                 {% endautoescape %}</h3>
+               <p>You answered {{student}}</p>
+               <p>The correct is {{correct}}</p>
+               <p></p>
+               <p>{{student_score}}</p>
+               <p>Current score is {{student_score}} out of {{index}}</p>
+               <p><input type = "hidden" name = "index_value" value = '{{index}}'></p>
+               <p><input type='hidden' name = 'student_score' value = '{{student_score}}'></p>
+               <p><input type = "submit" value = "CONTINUE"/></p>
+               <p><input type = 'hidden' name = 'total_questions' value = '{{total_questions}}'></p>
+               <p><input type = "hidden" name = "questions" value = '{{questions}}'></p>
+           </form>
+
+        </div>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Welcome {% endblock %}</h1>
+
+       <div>
+           <form action="/question" method = "POST">
+               <h2>Questions have been selected.</h2>
+               <h2> PRESS START BUTTON WHEN READY</h2>
+               <p></p>
+               <p>{{student_score}}</p>
+               <p><input type = 'hidden' name = 'total_questions' value = '{{total_questions}}'></p>
+               <p><input type = 'hidden' name = 'questions' value = '{{questions}}'></p>
+               <p><input type = "hidden" name = "index_value" value = '{{index}}'></p>
+               <p><input type='hidden' name = 'student_score' value = '{{student_score}}'></p>
+               <p><input type = "submit" value = "START"/></p>
+
+           </form>
+
+        </div>
+
+{% endblock %}

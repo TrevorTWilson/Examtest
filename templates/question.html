@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1><u>{% block title %} Question {% endblock %}</u></h1>
+
+        <div class='questions'>
+            <h2>{% autoescape false %}
+            {{ questions[index_value]['question'] }}                
+                {% endautoescape %}
+		{% set original_question = questions[index_value]['question'] %}</h2>
+            <p>{% set oringinal_answer = questions[index_value]['answer'] %}</p>
+            <p> </p>
+            <p> </p>
+        </div>
+<form action="/question/answer" method = "POST">
+
+      <div class="form-check form-check-inline">
+	  <input class="form-check-input" type="radio" name='RadioA' value='a' id="flexRadioDefault1">
+	  <label class="form-check-label" for="flexRadioDefault1">A.</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="radio" name='RadioA' value='b' id="flexRadioDefault2">
+	  <label class="form-check-label" for="flexRadioDefault2">B.</label>
+	</div>
+	  <div class="form-check form-check-inline">
+	  <input class="form-check-input" type="radio" name='RadioA' value='c' id="flexRadioDefault3">
+	  <label class="form-check-label" for="flexRadioDefault3">C.</label>
+	</div>
+	  <div class="form-check form-check-inline">
+	  <input class="form-check-input" type="radio" name='RadioA' value='d' id="flexRadioDefault4">
+	  <label class="form-check-label" for="flexRadioDefault4">D.</label>
+	</div>
+    <p></p>
+	<p>Current Score is: {{student_score}} out of {{index_value}} questions</p>
+    <p><input type = "hidden" name = "index_value" value = '{{index_value + 1}}'></p>
+    <p><input type = "hidden" name = "original_question" value = '{{original_question}}'></p>
+    <p><input type = "hidden" name = "original_answer" value = '{{oringinal_answer}}'></p>
+    <p><input type = "hidden" name = "student_score" value = '{{student_score}}'></p>
+	<p><input type = "hidden" name = "questions" value = '{{questions}}'></p>
+	<p><input type = 'hidden' name = 'total_questions' value = '{{total_questions}}'></p>
+		<p><input type = 'submit' value = 'Submit'/></p>
+</form>
+
+
+
+{% endblock %}

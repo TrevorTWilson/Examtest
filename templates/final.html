@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1><u>{% block title %} Final Score {% endblock %}</u></h1>
+     <p></p>
+     <p></p>
+       <div>
+           <form action="/" method = "POST">
+               <p></p>
+             <h3>You have finished all the questions</h3>
+               <p>You answered {{student_score}} correctly.</p>
+               <p>Out of a possible {{index_value}}</p>
+               <p>{% set final = ((student_score)/(index_value))*100 %}</p>
+               <p></p>
+               <H1>Final grade is {{final}}</H1>
+               <p>{% set index = 0 %}</p>
+               <p>{% set student_score = 0 %}</p>
+               <p><input type = "hidden" name = "index_value" value = '{{index}}'></p>
+               <p><input type= 'hidden' name = 'student_score' value = '{{student_score}}'></p>
+               <p><input type = "submit" value = "START OVER"/></p>
+
+           </form>
+
+        </div>
+
+{% endblock %}
