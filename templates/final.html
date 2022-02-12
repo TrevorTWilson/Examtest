@@ -12,7 +12,7 @@
                <p>Out of a possible {{index_value}}</p>
                <p>{% set final = ((student_score)/(index_value))*100 %}</p>
                <p></p>
-               <H1>Final grade is {{final}}</H1>
+               <H1>Final grade is {{'%0.2f'|format(final|float)}}</H1>
                <p>{% set index = 0 %}</p>
                <p>{% set student_score = 0 %}</p>
                <p><input type = "hidden" name = "index_value" value = '{{index}}'></p>

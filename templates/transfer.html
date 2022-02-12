@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %}Login page{% endblock %}
+
+{% block content %}
+<form action='#' method = 'post'>
+	<p>Name:</p>
+	{% set radio_name = ['RadioA','RadioB','RadioC','RadioD','RadioE'] %}
+	{% for item in random_question %}
+		<p>{% autoescape false %}
+		{{item}}
+		{% endautoescape %}</p>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="radio" name={{radio_name[(loop.index-1)]}} value='a' id="flexRadioDefault1">
+	  <label class="form-check-label" for="flexRadioDefault1">A.</label>
+	</div>
+	<div class="form-check form-check-inline">
+	  <input class="form-check-input" type="radio" name={{radio_name[loop.index-1]}} value='b' id="flexRadioDefault2">
+	  <label class="form-check-label" for="flexRadioDefault2">B.</label>
+	</div>  
+	  <div class="form-check form-check-inline">
+	  <input class="form-check-input" type="radio" name={{radio_name[loop.index-1]}} value='c' id="flexRadioDefault3">
+	  <label class="form-check-label" for="flexRadioDefault3">C.</label>
+	</div> 
+	  <div class="form-check form-check-inline">
+	  <input class="form-check-input" type="radio" name={{radio_name[loop.index-1]}} value='d' id="flexRadioDefault4">
+	  <label class="form-check-label" for="flexRadioDefault4">D.</label>
+	</div> 
+	<p>{{loop.index}}</p>
+	<p></p>
+	{% endfor %}
+		<p><input type = 'submit' value = 'Submit'/></p> 
+</form>
+{% endblock %}

@@ -88,17 +88,18 @@ def answer():
         total_questions = int(total_returned)
         temp = request.form['questions']
         final = list(eval(temp))
-        if not student_answer:
-            flash('ANSWER IS REQUIRED!!!')
+        if student_answer == 'e':
+            flash('ANSWER IS REQUIRED!!! USE THE BACK BUTTON TO ANSWER QUESTION.')
         else:
             if student_answer == answer_question:
                 score += 1
                 flash('CORRECT ANSWER')
             else:
                 flash('INCORRECT ANSWER')
-            return render_template('answer.html', question = question_returned, student = student_answer, correct = answer_question,
+        return render_template('answer.html', question = question_returned, student = student_answer, correct = answer_question,
                                    student_score = score, index = index, total_questions = total_questions, questions = final)
-
+    
+    
 @app.route('/final')
 def final():
     return render_template('final.html')

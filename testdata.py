@@ -61,7 +61,8 @@ chapter2_questions = ["Which statement supports the fact that metals are good co
 "One of the major advantages of inverter welding power sources is _________ _<br><br>a. low initial cost<br><br>b. small size and low weight<br><br>c. no need for feedback control<br><br>d. high input voltages",
 "High frequency arc starting circuits use ________ to generate the high frequency.<br><br>a. a spark gap<br><br>b. high speed switching transistors<br><br>c. inverters<br><br>d. SCRs",
 "Synergic control is typically used for the _______ process.<br><br>a. SAW<br><br>b. SMAW<br><br>c. PAW<br><br>d. GMAW",
-"The open circuit voltage of GMAW and SMAW is:<br><br>a. the same for both<br><br>b. different<br><br>C. for SMAW is higher<br><br>d. for GMAW is higher Microplasma or needle arc welding apply to the following process:<br><br>a. GMAW<br><br>b. PAW<br><br>c. SAW<br><br>d. FCAW",
+"The open circuit voltage of GMAW and SMAW is:<br><br>a. the same for both<br><br>b. different<br><br>C. for SMAW is higher<br><br>d. for GMAW is higher",
+"Microplasma or needle arc welding apply to the following process:<br><br>a. GMAW<br><br>b. PAW<br><br>c. SAW<br><br>d. FCAW",
 "DC generator is different to alternator because:<br><br>a. DC generators have a conductor that moves quickly through a magnetic field<br><br>b. alternators have a conductor that moves quickly through a magnetic field<br><br>c. DC generators produce a current by the stationary winding<br><br>d. none of the above",
 "Which one of the devices indicated in the following list is a microprocessor control?<br><br>a. Resistors<br><br>b. Relays<br><br>c. Transistors<br><br>d. Motors","junk question used to fill the list out(just pick a)"]
 
@@ -99,7 +100,7 @@ chapter3_questions = ["What is the core wire made of in a SMAW Electrode?<br><br
 "Low alloy steel a,c Weld;ng elect,ode, suoh as ESS18-B3 o, ESS18-C3 <an be used foe,<br><br>a. the same application<br><br>b . only when the carbon content is low in the parent material<br><br>c. only when the carbon content is high in the parent material<br><br>d. B3 is for high temperature application and C3 for low temperature application",
 "Which one of the following standards is used in Canada for filler materials joining copper and copper alloy in the GTAW, GMAW and PAW processes?<br><br>a. AWSAS.7<br><br>b. AWSA5.18<br><br>c. AWS A5.17<br><br>d. AWSAS.20"]
 
-chapter3_answers = ["b","c","d","d","a","c","d","b","c","a","d","d","d","b","b","C","d","b","b","d","d","c","d","a","d","c","a","d","d","a"]
+chapter3_answers = ["b","c","d","d","a","c","d","b","c","a","d","d","d","b","b","c","d","b","b","d","d","c","d","a","d","c","a","d","d","a"]
 
 chapter4_questions = ["Elastic deformation is best described as:<br><br>a. permanent deformation caused by welding stresses<br><br>b. stress that causes contraction or shrinkage<br><br>c. deformation that does not exceed the yield point<br><br>d. an increase in the dimensions of a body",
 "The coefficient of thermal expansion of a material is considered a/an:<br><br>a. physical property<br><br>b. mechanical property<br><br>c. chemical property<br><br>d. electrical property",
